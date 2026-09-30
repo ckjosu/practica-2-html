@@ -1,0 +1,457 @@
+/* ==========================================================
+   Práctica 3. Utilización de estilos
+   Programación Web (AEB-1055) - ITESCAM
+   Equipo TacoCoders
+   ========================================================== */
+
+/* ---------- Variables y reinicio ---------- */
+
+:root {
+  --verde: #4a9e53;
+  --verde-oscuro: #3d8544;
+  --naranja: #f2703a;
+  --naranja-claro: #f9a03f;
+  --gris-texto: #6b6b6b;
+  --gris-oscuro: #333333;
+  --gris-fondo: #f5f5f5;
+  --azul-enlace: #2a7ab0;
+  --blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gris-oscuro);
+  background-color: var(--blanco);
+}
+
+a {
+  color: var(--azul-enlace);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Barra superior ---------- */
+
+.topbar {
+  background-color: #2b2b2b;
+  color: var(--blanco);
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.market {
+  font-size: 15px;
+  color: #cfcfcf;
+}
+
+.mainnav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.mainnav a {
+  color: #dddddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mainnav a:hover {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+/* ---------- Zona verde ---------- */
+
+.verde {
+  background: linear-gradient(160deg, var(--verde) 0%, var(--verde-oscuro) 100%);
+  color: var(--blanco);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero {
+  padding-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.oferta {
+  font-style: italic;
+  font-size: 19px;
+  color: #ffe9a8;
+}
+
+/* ---------- Tarjetas de planes ---------- */
+
+.plans h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.plan {
+  background-color: var(--blanco);
+  color: var(--gris-oscuro);
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  padding: 30px 25px;
+  position: relative;
+}
+
+.plan h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.descripcion {
+  color: var(--gris-texto);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--naranja);
+  color: var(--blanco);
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 2px;
+}
+
+.precio {
+  background-color: var(--gris-fondo);
+  padding: 18px 10px;
+  margin: 0 -25px 20px;
+}
+
+.precio .etiqueta {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gris-texto);
+}
+
+.precio .monto {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--gris-oscuro);
+}
+
+.precio .anterior {
+  display: block;
+  font-size: 13px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.plan ul li {
+  padding: 7px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #efefef;
+}
+
+.plan ul li:last-child {
+  border-bottom: none;
+}
+
+.boton {
+  display: inline-block;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 40px;
+  border-radius: 2px;
+}
+
+.boton:hover {
+  background-color: #d95a27;
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+/* ---------- Comparativa ---------- */
+
+.comparativa {
+  padding-top: 20px;
+}
+
+.comparativa h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.comparativa ol {
+  display: inline-block;
+  text-align: left;
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.comparativa ol li {
+  padding: 4px 0;
+}
+
+.comparativa > p {
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.92;
+}
+
+/* ---------- Grupos de características ---------- */
+
+.caracteristicas {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 55px 20px;
+}
+
+.caracteristicas h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+
+.caracteristicas h3 {
+  font-size: 17px;
+  margin: 25px 0 10px;
+  color: var(--gris-oscuro);
+}
+
+.caracteristicas ul {
+  list-style: none;
+  color: var(--gris-texto);
+}
+
+.caracteristicas ul li {
+  padding: 5px 0 5px 20px;
+  position: relative;
+}
+
+.caracteristicas ul li::before {
+  content: "•";
+  color: var(--verde);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ---------- Banner de soporte (página 2) ---------- */
+
+.soporte {
+  background: linear-gradient(rgba(40, 40, 40, 0.75), rgba(40, 40, 40, 0.75)),
+              linear-gradient(120deg, #7d7367 0%, #4a453f 60%, #2f2b27 100%);
+  color: var(--blanco);
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.soporte h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.soporte > p {
+  max-width: 620px;
+  margin: 0 auto 35px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.ventajas {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ventajas li {
+  width: 190px;
+}
+
+.ventajas h2 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.ventajas p {
+  font-size: 13px;
+  color: var(--naranja-claro);
+}
+
+/* ---------- Pasos para pedir ayuda ---------- */
+
+.pasos {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 45px 20px 10px;
+  text-align: center;
+}
+
+.pasos h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.pasos ol {
+  display: inline-block;
+  text-align: left;
+  color: var(--gris-texto);
+  padding-left: 22px;
+}
+
+.pasos ol li {
+  padding: 4px 0;
+}
+
+/* ---------- Herramientas ---------- */
+
+.herramientas {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 45px 20px 65px;
+  text-align: center;
+}
+
+.herramientas h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  border-top: 3px solid var(--naranja-claro);
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.herramientas > p {
+  color: var(--gris-texto);
+  margin-bottom: 40px;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 35px;
+  text-align: left;
+}
+
+.herramienta h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.herramienta p {
+  font-size: 13px;
+  color: var(--gris-texto);
+  margin-bottom: 10px;
+}
+
+.enlace {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Pie de página ---------- */
+
+footer {
+  background-color: #2b2b2b;
+  color: #bbbbbb;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #8ec9f0;
+}
+
+/* ---------- Adaptación a pantallas pequeñas ---------- */
+
+@media (max-width: 900px) {
+  .rejilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .rejilla {
+    grid-template-columns: 1fr;
+  }
+  .plan {
+    width: 100%;
+    max-width: 330px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+}
