@@ -455,3 +455,22 @@ footer a {
     font-size: 26px;
   }
 }
+
+/* ---------- Estilos para impresión ---------- */
+
+@media print {
+  .topbar,
+  .mainnav,
+  footer {
+    display: none;
+  }
+  .verde,
+  .soporte {
+    background: none;
+    color: #000000;
+  }
+  .plan {
+    box-shadow: none;
+    border: 1px solid #cccccc;
+  }
+}
