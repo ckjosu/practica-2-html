@@ -1,9 +1,17 @@
 # Práctica 2. Elementos básicos del lenguaje de marcas
 
 **Materia:** Programación Web (AEB-1055)
-**Alumno:** Josue Hilario Cab Ku
 **Carrera:** Ingeniería en Sistemas Computacionales - ITESCAM
+**Equipo:** TacoCoders
 **Semana de ejecución:** Semana 2
+
+### Integrantes
+
+- Josue Hilario Cab Ku
+- Erick Chi Calán
+- Luis Sánchez Ucán
+- Mauricio Cih Koh
+- Tommy Can Mut
 
 ## Descripción
 
@@ -64,7 +72,7 @@ Las páginas se publican dentro del entorno Docker que se armó en la Práctica 
 
 1. Copiar la carpeta dentro del proyecto de Laravel:
    `cp index.html soporte.html ../practica-1-docker/app-laravel/public/practica2/`
-2. Levantar los contenedores: `docker compose -f docker-compose.dev.yml up -d`
+2. Levantar los contenedores: `docker compose -p dev -f docker-compose.dev.yml up -d`
 3. Abrir <http://localhost:8000/practica2/index.html>
 4. Revisar que el enlace a la página de soporte funcione en los dos sentidos.
 
