@@ -145,32 +145,36 @@ soporte.html    Se agregó el enlace Customer Center al menú
 
 ## Comparativa de tiempos
 
-Tiempos registrados en TopTracker (proyecto *Practica 4 - Formularios*, una actividad por tarea).
-El tiempo real está en minutos:segundos.
+Tiempos registrados en TopTracker (proyecto *Practica 4 - Formularios*, una actividad por tarea),
+tomados de la sección *My activities*. TopTracker redondea cada actividad hacia abajo; el total
+del día que reporta es 1 h 02 min.
 
-| #  | Tarea                                          | Estimado   | Real   | Diferencia |
-|----|------------------------------------------------|------------|--------|------------|
-| 1  | Clonar el repo y crear la rama `formulario`    | 15 min     | 3:37   | -11:23     |
-| 2  | Descargar Bootstrap y agregarlo                | 15 min     | 4:19   | -10:41     |
-| 3  | Estructura de `contacto.html` y menú superior  | 20 min     | 5:27   | -14:33     |
-| 4  | Pestañas New / Existing customer               | 20 min     | 3:53   | -16:07     |
-| 5  | Formulario New customer                        | 25 min     | 3:35   | -21:25     |
-| 6  | Formulario Existing customer                   | 15 min     | 3:43   | -11:17     |
-| 7  | Envío al correo con FormSubmit                 | 15 min     | 3:47   | -11:13     |
-| 8  | Estilos para parecerse a la imagen             | 30 min     | 5:38   | -24:22     |
-| 9  | Enlace en el menú de index y soporte           | 10 min     | 2:31   | -7:29      |
-| 10 | Commit, push y merge a `main`                  | 20 min     | 2:42   | -17:18     |
-| 11 | Prueba en Docker y envío del formulario        | 20 min     | 6:12   | -13:48     |
-| 12 | Tabla comparativa y conclusiones               | 25 min     | 3:21   | -21:39     |
-|    | **Total**                                      | **3 h 50 min** | **48:45** | **-3 h 01 min** |
+| #  | Tarea                                          | Estimado   | Real (TopTracker) | Diferencia |
+|----|------------------------------------------------|------------|-------------------|------------|
+| 1  | Clonar el repo y crear la rama `formulario`    | 15 min     | 5 min             | -10 min    |
+| 2  | Descargar Bootstrap y agregarlo                | 15 min     | 4 min             | -11 min    |
+| 3  | Estructura de `contacto.html` y menú superior  | 20 min     | 5 min             | -15 min    |
+| 4  | Pestañas New / Existing customer               | 20 min     | 4 min             | -16 min    |
+| 5  | Formulario New customer                        | 25 min     | 3 min             | -22 min    |
+| 6  | Formulario Existing customer                   | 15 min     | 3 min             | -12 min    |
+| 7  | Envío al correo con FormSubmit                 | 15 min     | 3 min             | -12 min    |
+| 8  | Estilos para parecerse a la imagen             | 30 min     | 5 min             | -25 min    |
+| 9  | Enlace en el menú de index y soporte           | 10 min     | 2 min             | -8 min     |
+| 10 | Commit, push y merge a `main`                  | 20 min     | 2 min             | -18 min    |
+| 11 | Prueba en Docker y envío del formulario        | 20 min     | 6 min             | -14 min    |
+| 12 | Tabla comparativa, README y conclusiones       | 25 min     | 13 min            | -12 min    |
+|    | **Total (reporte de TopTracker)**              | **3 h 50 min** | **1 h 02 min** | **-2 h 48 min** |
+
 ## Conclusiones
 
-El tiempo estimado fue de 3 horas con 50 minutos y el real fue de 48 minutos con 45 segundos, unas 3 horas menos. Todas las tareas
-tardaron menos de lo calculado. La estimación se hizo pensando en escribir cada parte desde cero y
-buscando la documentación, pero el trabajo se hizo siguiendo una guía paso a paso con el código ya
-planeado, y Bootstrap resolvió casi todo el diseño (menú, pestañas, campos y botones) con clases ya
-hechas. Las tareas más largas fueron la estructura de la página y los estilos, porque fue donde más
-se revisó el resultado contra la imagen del manual.
+El tiempo estimado fue de 3 horas con 50 minutos y el tiempo real registrado en TopTracker fue de
+1 hora con 2 minutos, 2 horas con 48 minutos menos. Todas las tareas tardaron menos de lo calculado.
+La estimación se hizo pensando en escribir cada parte desde cero y buscando la documentación, pero el
+trabajo se hizo siguiendo una guía paso a paso con el código ya planeado, y Bootstrap resolvió casi
+todo el diseño (menú, pestañas, campos y botones) con clases ya hechas. La tarea más larga fue la
+última (13 minutos), porque incluyó redactar el README, la tabla y las conclusiones; le siguieron la
+prueba en Docker, donde hubo que arrancar Docker Desktop, y la estructura y los estilos de la página,
+donde más se revisó el resultado contra la imagen del manual.
 
 Lo que más tiempo hizo perder fueron detalles de herramientas, no de código. En la tarea 7 se
 ejecutó `git add` antes de guardar el archivo y Git respondió *nothing to commit*, así que hubo que
