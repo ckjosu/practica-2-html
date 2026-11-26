@@ -1,0 +1,104 @@
+/* ==========================================================
+   Practica 4. Manejo de tablas y formularios
+   Estilos propios para contacto.html (se cargan despues de Bootstrap)
+   Equipo TacoCoders
+   ========================================================== */
+
+:root {
+  --cc-fondo: #eef1f4;
+  --cc-campo: #eef1f5;
+  --cc-azul: #4a9bd4;
+  --cc-azul-oscuro: #3a86bd;
+  --cc-titulo: #3d3d3d;
+}
+
+body {
+  background-color: var(--cc-fondo) !important;
+}
+
+/* Titulo y subtitulo */
+.cc-titulo {
+  color: var(--cc-titulo);
+  font-size: 2.6rem;
+}
+
+.cc-subtitulo {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Tarjeta */
+.cc-tarjeta {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Pestanas */
+.cc-tarjeta .nav-tabs {
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.cc-tarjeta .nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  background-color: #f4f5f7;
+  color: var(--cc-azul);
+  font-weight: 600;
+  padding: 1rem;
+  border-top: 3px solid transparent;
+}
+
+.cc-tarjeta .nav-tabs .nav-link:hover {
+  color: var(--cc-azul-oscuro);
+}
+
+.cc-tarjeta .nav-tabs .nav-link.active {
+  background-color: #ffffff;
+  color: #222222;
+  border-top: 3px solid #2b2b2b;
+}
+
+/* Campos grises sin borde, como en la imagen */
+.cc-tarjeta .input-group-text,
+.cc-tarjeta .form-control {
+  background-color: var(--cc-campo);
+  border: 1px solid #e3e7eb;
+  color: #333;
+}
+
+.cc-tarjeta .input-group-text {
+  border-right: none;
+  color: #8a8f95;
+}
+
+.cc-tarjeta .input-group .form-control {
+  border-left: none;
+}
+
+.cc-tarjeta .form-control::placeholder {
+  color: #7a7f85;
+}
+
+.cc-tarjeta .form-control:focus {
+  background-color: #ffffff;
+  border-color: var(--cc-azul);
+  box-shadow: 0 0 0 0.2rem rgba(74, 155, 212, 0.2);
+}
+
+/* Enlace "click here" */
+.cc-tarjeta a {
+  color: var(--cc-azul);
+}
+
+/* Boton azul claro */
+.cc-boton {
+  background-color: var(--cc-azul);
+  border-color: var(--cc-azul);
+  border-radius: 3px;
+}
+
+.cc-boton:hover,
+.cc-boton:focus {
+  background-color: var(--cc-azul-oscuro);
+  border-color: var(--cc-azul-oscuro);
+}
