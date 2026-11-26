@@ -102,8 +102,30 @@
             </div>
 
             <div class="tab-pane fade" id="panel-existente" role="tabpanel" aria-labelledby="tab-existente">
-              <!-- Formulario Existing customer (Tarea 6) -->
-              <p class="text-center text-secondary">Existing customer form</p>
+              <!-- Formulario Existing customer -->
+              <form id="form-existente" action="#" method="post">
+
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </span>
+                  <input type="text" class="form-control" id="usuario" name="username"
+                         placeholder="Username:" aria-label="Username" required>
+                </div>
+
+                <div class="input-group input-group-lg mb-4">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                  </span>
+                  <input type="password" class="form-control" id="contrasena" name="password"
+                         placeholder="Password:" aria-label="Password" required>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg px-5 fw-bold">Login To Support</button>
+                </div>
+
+              </form>
             </div>
 
           </div>
