@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customer Center form - Practica 4, Programacion Web, ITESCAM.">
+  <meta name="author" content="Erick Chi Calan">
+  <title>Customer Center</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+  <!-- Menu superior con Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2b2b2b;">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">SiteGround</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hosting Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="soporte.html">Support and Tools</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Customer Center</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h1 class="fw-bold cc-titulo">Customer Center</h1>
+      <p class="cc-subtitulo">
+        To help us assist you most efficiently, please log in to our<br>
+        Customer Support Center:
+      </p>
+    </div>
+
+    <!-- Tarjeta con las dos pestanas -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card shadow-sm border-0 cc-tarjeta">
+
+          <ul class="nav nav-tabs nav-fill" id="pestanas" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-nuevo" data-bs-toggle="tab"
+                      data-bs-target="#panel-nuevo" type="button" role="tab"
+                      aria-controls="panel-nuevo" aria-selected="true">
+                New customer
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-existente" data-bs-toggle="tab"
+                      data-bs-target="#panel-existente" type="button" role="tab"
+                      aria-controls="panel-existente" aria-selected="false">
+                Existing customer
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content card-body p-4 p-md-5">
+
+            <div class="tab-pane fade show active" id="panel-nuevo" role="tabpanel" aria-labelledby="tab-nuevo">
+              <!-- Formulario New customer -->
+              <form id="form-nuevo" action="https://formsubmit.co/ypech@itescam.edu.mx" method="POST">
+                <input type="hidden" name="_subject" value="Practica 4 - New customer (TacoCoders)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="form" value="New customer">
+
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </span>
+                  <input type="text" class="form-control" id="nombre" name="name"
+                         placeholder="Name:" aria-label="Name" required>
+                </div>
+
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+                  </span>
+                  <input type="email" class="form-control" id="email" name="email"
+                         placeholder="Email:" aria-label="Email" required>
+                </div>
+
+                <p class="text-center small mb-3">
+                  *If you are an existing customer of ours, please
+                  <a href="#" class="fw-semibold text-decoration-none"
+                     onclick="bootstrap.Tab.getOrCreateInstance(document.getElementById('tab-existente')).show(); return false;">click here</a>
+                  <br>to identify for faster assistance.
+                </p>
+
+                <div class="mb-4">
+                  <textarea class="form-control form-control-lg" id="pregunta" name="question"
+                            rows="4" placeholder="Question:" aria-label="Question" required></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn cc-boton text-white btn-lg px-5 fw-bold">Continue</button>
+                </div>
+
+              </form>
+            </div>
+
+            <div class="tab-pane fade" id="panel-existente" role="tabpanel" aria-labelledby="tab-existente">
+              <!-- Formulario Existing customer -->
+              <form id="form-existente" action="https://formsubmit.co/ypech@itescam.edu.mx" method="POST">
+                <input type="hidden" name="_subject" value="Practica 4 - Existing customer (TacoCoders)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="form" value="Existing customer">
+
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </span>
+                  <input type="text" class="form-control" id="usuario" name="username"
+                         placeholder="Username:" aria-label="Username" required>
+                </div>
+
+                <div class="input-group input-group-lg mb-4">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                  </span>
+                  <input type="password" class="form-control" id="contrasena" name="password"
+                         placeholder="Password:" aria-label="Password" required>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn cc-boton text-white btn-lg px-5 fw-bold">Login To Support</button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-center py-4" style="background-color: #2b2b2b; color: #bbbbbb;">
+    <p class="mb-1">Practica 4. Manejo de tablas y formularios.</p>
+    <p class="mb-1">Programacion Web (AEB-1055) - ITESCAM</p>
+    <p class="mb-0"><a href="index.html" style="color: #8ec9f0;">Go back to the hosting plans page</a></p>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
