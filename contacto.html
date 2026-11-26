@@ -38,7 +38,44 @@
       </p>
     </div>
 
-    <!-- Aqui van las pestanas y los formularios (Tareas 4 a 7) -->
+    <!-- Tarjeta con las dos pestanas -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card shadow-sm border-0">
+
+          <ul class="nav nav-tabs nav-fill" id="pestanas" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-nuevo" data-bs-toggle="tab"
+                      data-bs-target="#panel-nuevo" type="button" role="tab"
+                      aria-controls="panel-nuevo" aria-selected="true">
+                New customer
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-existente" data-bs-toggle="tab"
+                      data-bs-target="#panel-existente" type="button" role="tab"
+                      aria-controls="panel-existente" aria-selected="false">
+                Existing customer
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content card-body p-4 p-md-5">
+
+            <div class="tab-pane fade show active" id="panel-nuevo" role="tabpanel" aria-labelledby="tab-nuevo">
+              <!-- Formulario New customer (Tarea 5) -->
+              <p class="text-center text-secondary">New customer form</p>
+            </div>
+
+            <div class="tab-pane fade" id="panel-existente" role="tabpanel" aria-labelledby="tab-existente">
+              <!-- Formulario Existing customer (Tarea 6) -->
+              <p class="text-center text-secondary">Existing customer form</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 
