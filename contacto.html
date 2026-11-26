@@ -63,8 +63,42 @@
           <div class="tab-content card-body p-4 p-md-5">
 
             <div class="tab-pane fade show active" id="panel-nuevo" role="tabpanel" aria-labelledby="tab-nuevo">
-              <!-- Formulario New customer (Tarea 5) -->
-              <p class="text-center text-secondary">New customer form</p>
+              <!-- Formulario New customer -->
+              <form id="form-nuevo" action="#" method="post">
+
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                  </span>
+                  <input type="text" class="form-control" id="nombre" name="name"
+                         placeholder="Name:" aria-label="Name" required>
+                </div>
+
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+                  </span>
+                  <input type="email" class="form-control" id="email" name="email"
+                         placeholder="Email:" aria-label="Email" required>
+                </div>
+
+                <p class="text-center small mb-3">
+                  *If you are an existing customer of ours, please
+                  <a href="#" class="fw-semibold text-decoration-none"
+                     onclick="bootstrap.Tab.getOrCreateInstance(document.getElementById('tab-existente')).show(); return false;">click here</a>
+                  <br>to identify for faster assistance.
+                </p>
+
+                <div class="mb-4">
+                  <textarea class="form-control form-control-lg" id="pregunta" name="question"
+                            rows="4" placeholder="Question:" aria-label="Question" required></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg px-5 fw-bold">Continue</button>
+                </div>
+
+              </form>
             </div>
 
             <div class="tab-pane fade" id="panel-existente" role="tabpanel" aria-labelledby="tab-existente">
